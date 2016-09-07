@@ -1,0 +1,46 @@
+<div class="jq-search-page">
+	<div class="jq-srch-hv" rs="true" type="ALL" bucketCompanyType="ALL"></div>
+	<form class="fr-srch-field">
+		<span class="jq-f-span fr-hide">
+  			<span class="fr-auto-tab-w fr-no-brdr">
+  				<span class="jq-fgt fr-auto-tab select" bct="ALL"><i class="fa fa-check-circle-o"></i> All &nbsp;</span> 
+  				<span class="jq-fgt fr-auto-tab" bct="REGION"><i class="fa fa-circle-o"></i> Region &nbsp;</span> 
+  				<span class="jq-fgt fr-auto-tab" bct="INDUSTRY"><i class="fa fa-circle-o"></i> Industry</span>
+  			</span>
+ 			<span class="fr-auto-tab-w fr-last-child fr-pt-10 jq-cf-rs"><i class="fa fa-check-square-o jq-rs"></i> Remove Subsidiaries</span>
+		</span>
+	</form>
+	<div class="fr-srch-cntnr">
+		<div class="fr-srch-selecter jq-sel-dd"><span class="jq-srch-txt">All</span> &nbsp; <i class="fa fa-sort-desc fr-fr"></i></div>
+		<div class="fr-filter-drpdwn fr-srch-selectr-drp jq-srch-selectr-drp fr-hide">
+			<a class="jq-sel-all fr-hide-imp">All</a>
+			<a class="jq-sel-com">Companies</a>
+			<a class="jq-sel-thm">Themes</a>
+		</div>
+	</div>
+	<form class="fr-srch-field">
+		<div class="jq-autCompleteSuggestion"></div>
+		<div class="fr-search-lt fr-hide jq-recent-search ac_results">
+			<span class="jq-suggested-link">
+				<div class="fr-divider-srch"></div>
+				<div class="jq-ld-as fr-spnr fr-spnr-srch fr-hide"><img ng-attr-src='{{$root.imgCssURL}}spacer.gif' class='fr-spinner'> Loading</div>
+				<ul class="jq-auto-complete-list fr-hide"></ul>
+				<div class="fr-divider-srch"></div>
+			</span>
+		</div>
+	    <div id="jq-drived-themes" class="fr-hide"></div>
+	    <div id="jq-key-phrases" class="fr-hide"></div>
+	</form>
+	<div class="fr-pane">
+		<header class="fr-pane-header">
+			<h1 class="fr-pane-title">
+		  		<span ng-if="res.recentSearches">Recent Searches</span>
+		  	</h1>
+		</header>
+		<div class="fr-pane-inner">
+			<div class="clearfix">
+				<div class="columns medium-6 fr-pane-column-6">{{recentSearchRes}}</div>
+			</div> 
+		</div>
+	</div>
+</div>

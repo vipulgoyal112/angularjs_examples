@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="../js/angular.js"></script>
+<script type="text/javascript" src="../js/autocomplete.js"></script>
+</head>
+<body>
+
+<div ng-app="autocomplete" ng-controller="autoCompleteController">
+	<input ng-click="search();" type="button" value="button" />
+ 	<input id="jqi-ac-in" type="text" placeholder="Companies or themes" name="search" style="display:none">
+ 	<div id="jq-channel-cards"></div>
+ 	<div id="jq-channel-cards1"></div>
+ 	<input type="text" ng-model="autoCompText">
+</div>
+
+
+</body>
+</html>
